@@ -67,9 +67,8 @@
 #nav .site-icon {
   width: 36px;
   height: 36px;
-  border-radius: 50%;
+  border-radius: 0;
   object-fit: cover;
-  box-shadow: 0 0 0 2px rgba(158, 200, 255, 0.28);
 }
 
 #page-header.full_page #site-title {
