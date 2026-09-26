@@ -163,34 +163,14 @@ a:hover {
   background: rgba(4, 8, 14, 0.3);
 }
 
-#roxy-mascot {
-  position: fixed;
-  left: 22px;
-  bottom: 18px;
-  width: clamp(118px, 12vw, 168px);
-  z-index: 101;
-  pointer-events: none;
-  opacity: 0.96;
+#live2d-widget {
+  z-index: 101 !important;
   filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.4));
-  animation: roxy-float 4.6s ease-in-out infinite;
 }
 
-#roxy-mascot img {
-  display: block;
-  width: 100%;
-  height: auto;
-  user-select: none;
-}
-
-@keyframes roxy-float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
+#live2d-widget,
+#live2dcanvas {
+  pointer-events: auto !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -216,10 +196,7 @@ a:hover {
     -webkit-backdrop-filter: blur(12px) saturate(135%);
   }
 
-  #roxy-mascot {
-    left: 12px;
-    bottom: 10px;
-    width: 96px;
-    opacity: 0.92;
+  #live2d-widget {
+    display: none !important;
   }
 }
