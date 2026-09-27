@@ -12,11 +12,11 @@
 }
 
 #web_bg {
-  background-image: url('/image/bg.jpg'), url('/image/bg-blur.jpg') !important;
-  background-position: center center, center center !important;
-  background-repeat: no-repeat, no-repeat !important;
-  background-size: contain, cover !important;
-  background-attachment: fixed, fixed !important;
+  background-image: url('/image/bg.jpg') !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
   filter: saturate(1.05) brightness(0.98) contrast(1.04);
 }
 
@@ -24,10 +24,7 @@
   content: '';
   position: fixed;
   inset: 0;
-  background:
-    radial-gradient(circle at 18% 22%, rgba(103, 164, 255, 0.12), transparent 32%),
-    radial-gradient(circle at 82% 18%, rgba(145, 214, 255, 0.08), transparent 28%),
-    linear-gradient(135deg, rgba(4, 10, 18, 0.1), rgba(4, 10, 18, 0.26));
+  background: linear-gradient(180deg, rgba(4, 10, 18, 0.06), rgba(4, 10, 18, 0.22));
   pointer-events: none;
 }
 
